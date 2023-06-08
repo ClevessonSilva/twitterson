@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const MeuBotao = () => {
+const Button = () => {
   const [hover, setHover] = useState(false);
 
   const handleMouseEnter = () => {
@@ -11,13 +11,17 @@ const MeuBotao = () => {
     setHover(false);
   };
 
+  const baseColor = '#3498db';
+  const hoverColor = '#2980b9';
+
   const estilo = {
-    backgroundColor: hover ? 'red' : 'blue',
-    color: 'black',
-    padding: '16px 16px',
-    fontSize: '16px',
+    backgroundColor: hover ? hoverColor : baseColor,
+    color: 'white',
+    padding: '20px 40px',
+    fontSize: '24px',
     border: 'none',
-    borderRadius: '5px',
+    borderRadius: '10px',
+    boxShadow: `0px 0px 10px rgba(0, 0, 0, ${hover ? '0.3' : '0'})`,
     cursor: 'pointer'
   };
 
@@ -27,9 +31,9 @@ const MeuBotao = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      Button
+      Gourmet Button
     </button>
   );
 };
 
-export default MeuBotao;
+export default Button;
