@@ -1,39 +1,15 @@
-import React, { useState } from 'react';
+"use client";
 
-const Button = () => {
-  const [hover, setHover] = useState(false);
+import React from 'react';
+import Button from './components/TelaDeContato';
 
-  const handleMouseEnter = () => {
-    setHover(true);
-  };
-
-  const handleMouseLeave = () => {
-    setHover(false);
-  };
-
-  const baseColor = '#3498db';
-  const hoverColor = '#2980b9';
-
-  const estilo = {
-    backgroundColor: hover ? hoverColor : baseColor,
-    color: 'white',
-    padding: '20px 40px',
-    fontSize: '24px',
-    border: 'none',
-    borderRadius: '10px',
-    boxShadow: `0px 0px 10px rgba(0, 0, 0, ${hover ? '0.3' : '0'})`,
-    cursor: 'pointer'
-  };
-
+const App = () => {
   return (
-    <button
-      style={estilo}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      Gourmet Button
-    </button>
+    <div>
+      <h1>OMG </h1>
+      <Button />
+    </div>
   );
 };
 
-export default Button;
+export default App;
