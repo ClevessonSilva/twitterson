@@ -1,0 +1,79 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 64px;
+    position: absolute;
+    width: 1278px;
+    height: 832px;
+    background: #13244E;
+  }
+  
+ 
+  .twitterson {
+    width: 436px;
+    height: 85px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+ 
+  .better-twitter {
+    width: 480px;
+    height: 54px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
+ 
+  .button {
+    width: 328px;
+    height: 128px;
+  }
+  
+ 
+  .rectangle {
+    position: absolute;
+    width: 328px;
+    height: 128px;
+    left: 475px;
+    top: 485.5px;
+    background: #319FB9;
+    border-radius: 24px;
+  }
+  
+  
+  .enter {
+    position: absolute;
+    width: 318px;
+    height: 82px;
+    left: 481px;
+    top: 508.5px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  
